@@ -3,7 +3,7 @@
     package="io.github.tslamic.prem">
 
     <uses-permission android:name="com.android.vending.BILLING" />
-    
-    <application/>
+
+    <application />
 
 </manifest>
