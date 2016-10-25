@@ -1,3 +1,5 @@
+#**Since the project is not under active development I made this fork and merged the two PR available in the original repository (that includes a lot of fixes) and made a release.**
+
 ![premiumer](http://i.imgur.com/lg5cEE3.png)
 
 If your Android app is showing ads, but you would like to offer an option to remove them with a single in-app purchase, `Premiumer` is here to help!
@@ -5,7 +7,18 @@ If your Android app is showing ads, but you would like to offer an option to rem
 First, add a dependency to your `build.gradle`:
 
 ```gradle
-compile 'com.github.tslamic.premiumer:library:1.1'
+compile 'com.github.SandroMachado:premiumer:1.1.1'
+```
+
+And add it in your root build.gradle at the end of repositories:
+
+```
+allprojects {
+	repositories {
+		...
+		maven { url "https://jitpack.io" }
+	}
+}
 ```
 
 There is no need to add any `aidl` files. Just ensure you call the appropriate lifecycle methods, for example like so:
